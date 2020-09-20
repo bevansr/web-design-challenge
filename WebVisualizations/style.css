@@ -1,0 +1,144 @@
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 2.0rem;
+    display: block;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 3.0rem;
+    padding: 10px;
+    color: #f8f9fa!important;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: solid lightgray;
+    border-width: 1px;
+    padding: 2.0rem;
+    margin: 2.0rem;
+}
+
+.col-sm-12, .col-md-4, .col-xl-6, .col-xl-5, .col-xl-7 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-align: center;
+    display: none;
+}
+
+.compare-statement {
+    margin-top: -15px;
+}
+
+.select-comparison {
+    border: 5px solid black;
+}
+
+thead tr th {
+    font-size: 1.2rem;
+}
+
+table {
+    margin-top: 30px;
+}
+
+.list-summary {
+    font-weight: bolder;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+ol li {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.buehrle-summary {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+.col-xl-5 p {
+    margin-left: 0px;
+}
+
+.mid-tbl {
+    border-top: 5px solid black;
+}
+
+.graph-cap {
+    font-size: 1.25rem;
+}
+
+.status-chg {
+    border-top: 3px dotted black;
+}
+
+.hofLink {
+    background-color: green;
+    color: white;
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.retiredLink {
+    background-color:black;
+    color: white;
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.activeLink {
+    background-color:blue;
+    color: white;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+.desc-tbl {
+    margin-left: -30px;
+}
+}
+
+@media (max-width: 767px) {
+#navbarSupportedContent {
+    float:left;
+    z-index: 1000;
+}
+
+.lgOnly {
+    display: none;
+}
+}
+
+@media (min-width: 768px) {
+    .smOnly {
+        display: none;
+    }
+}
+
+
