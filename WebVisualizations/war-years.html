@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Web Design Homework - MLB Pitcher Data </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+         <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">MLB HoF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto smOnly">
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="war-years.html">Career WAR vs Seasons Played</a>
+                        <a class="dropdown-item" href="avg-war-war.html">Avg WAR vs Total WAR</a>
+                        <a class="dropdown-item" href="war-era.html">WAR vs ERA</a>
+                        <a class="dropdown-item" href="avg-war-era.html">Avg WAR vs ERA</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav justify-content-end lgOnly">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="war-years.html">Career WAR vs Seasons Played</a>
+                    <a class="dropdown-item" href="avg-war-war.html">Avg WAR vs Total WAR</a>
+                    <a class="dropdown-item" href="war-era.html">WAR vs ERA</a>
+                    <a class="dropdown-item" href="avg-war-era.html">Avg WAR vs ERA</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!--Summary-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <h1> Career WAR vs Seasons Played</h1>
+                    <!--All Players-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav justify-content-center lgOnly">
+                                <li class="nav-item">
+                                  <a class="nav-link jumpToLink disabled" href="#">Jump to:</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link hofLink" href="#hofPlayers">HoF</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link retiredLink" href="#retiredPlayers">Retired</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link activeLink" href="#activePlayers">Active</a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <img src="./Resources/assets/images/war-years-all.jpg">
+                            <p class="graph-cap">Axes represent all-time MLB averages. It's clear there's a strong relationship between longevity and Career WAR, but it's interesting to see which players put up strong WAR numbers during shorter careers.</p>
+                        </div>    
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead class="thead-dark">
+                                  <tr>
+                                      <th colspan="6">Overall: Longest Career</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Nolan Ryan</th>
+                                        <td>HoF</td>
+                                        <td>27</td>
+                                        <td>83.6</td>
+                                        <td>3.10</td>
+                                        <td>3.19</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tommy John</th>
+                                        <td>Retired</td>
+                                        <td>26</td>
+                                        <td>62.1</td>
+                                        <td>2.39</td>
+                                        <td>3.34</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jim Kaat</th>
+                                        <td>Retired</td>
+                                        <td>25</td>
+                                        <td>45.2</td>
+                                        <td>1.81</td>
+                                        <td>3.45</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Charlie Hough</th>
+                                        <td>Retired</td>
+                                        <td>25</td>
+                                        <td>39.0</td>
+                                        <td>1.56</td>
+                                        <td>3.75</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Steve Carlton</th>
+                                        <td>HoF</td>
+                                        <td>24</td>
+                                        <td>84.1</td>
+                                        <td>3.50</td>
+                                        <td>3.22</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead>
+                                  <tr>
+                                      <th colspan="6">Overall: Career WAR</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Cy Young</th>
+                                        <td>HoF</td>
+                                        <td>22</td>
+                                        <td>165.7</td>
+                                        <td>7.53</td>
+                                        <td>2.63</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Walter Johnson</th>
+                                        <td>HoF</td>
+                                        <td>21</td>
+                                        <td>151.9</td>
+                                        <td>7.23</td>
+                                        <td>2.17</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Roger Clemens</th>
+                                        <td>Retired</td>
+                                        <td>24</td>
+                                        <td>138.7</td>
+                                        <td>5.78</td>
+                                        <td>3.13</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kid Nichols</th>
+                                        <td>HoF</td>
+                                        <td>15</td>
+                                        <td>116.7</td>
+                                        <td>7.78</td>
+                                        <td>2.96</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pete Alexander</th>
+                                        <td>HoF</td>
+                                        <td>20</td>
+                                        <td>116.0</td>
+                                        <td>5.80</td>
+                                        <td>2.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>               
+                        </div>
+                    </div>
+                    <!--HoF Players-->
+                    <div id="hofPlayers" class="row status-chg">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <img src="./Resources/assets/images/war-years-hof.jpg">
+                            <p class="graph-cap">Axes represent all-time MLB averages. It's clear there's a strong relationship between longevity and Career WAR, but it's interesting to see which players put up strong WAR numbers during shorter careers.</p>
+                        </div>    
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead class="thead-dark">
+                                  <tr>
+                                      <th colspan="6">HoF: Longest Career</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Nolan Ryan</th>
+                                        <td>HoF</td>
+                                        <td>27</td>
+                                        <td>83.6</td>
+                                        <td>3.10</td>
+                                        <td>3.19</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Steve Carlton</th>
+                                        <td>HoF</td>
+                                        <td>24</td>
+                                        <td>84.1</td>
+                                        <td>3.50</td>
+                                        <td>3.22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dennis Eckersly</th>
+                                        <td>HoF</td>
+                                        <td>24</td>
+                                        <td>62.2</td>
+                                        <td>2.59</td>
+                                        <td>3.50</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phil Niekro</th>
+                                        <td>HoF</td>
+                                        <td>24</td>
+                                        <td>97.0</td>
+                                        <td>4.04</td>
+                                        <td>3.35</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Early Wynn</th>
+                                        <td>HoF</td>
+                                        <td>23</td>
+                                        <td>51.5</td>
+                                        <td>2.24</td>
+                                        <td>3.54</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead>
+                                  <tr>
+                                      <th colspan="6">HoF: Career WAR</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Cy Young</th>
+                                        <td>HoF</td>
+                                        <td>22</td>
+                                        <td>165.7</td>
+                                        <td>7.53</td>
+                                        <td>2.63</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Walter Johnson</th>
+                                        <td>HoF</td>
+                                        <td>21</td>
+                                        <td>151.9</td>
+                                        <td>7.23</td>
+                                        <td>2.17</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kid Nichols</th>
+                                        <td>HoF</td>
+                                        <td>15</td>
+                                        <td>116.7</td>
+                                        <td>7.78</td>
+                                        <td>2.96</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pete Alexander</th>
+                                        <td>HoF</td>
+                                        <td>20</td>
+                                        <td>116.0</td>
+                                        <td>5.80</td>
+                                        <td>2.56</td>
+                                    <tr>
+                                        <th>Lefty Grove</th>
+                                        <td>HoF</td>
+                                        <td>17</td>
+                                        <td>113.3</td>
+                                        <td>6.66</td>
+                                        <td>3.06</td>
+                                    </tr>
+                                </tbody>
+                            </table>               
+                        </div>
+                    </div>
+                    <!--Retired Players-->
+                    <div id="retiredPlayers" class="row status-chg">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <img src="./Resources/assets/images/war-years-retired.jpg">
+                            <p class="graph-cap">Axes represent all-time MLB averages. It's clear there's a strong relationship between longevity and Career WAR, but it's interesting to see which players put up strong WAR numbers during shorter careers.</p>
+                        </div>    
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead class="thead-dark">
+                                  <tr>
+                                      <th colspan="6">Retired: Longest Career</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Tommy John</th>
+                                        <td>Retired</td>
+                                        <td>26</td>
+                                        <td>62.1</td>
+                                        <td>2.39</td>
+                                        <td>3.34</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jim Kaat</th>
+                                        <td>Retired</td>
+                                        <td>25</td>
+                                        <td>45.2</td>
+                                        <td>1.81</td>
+                                        <td>3.45</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Charlie Hough</th>
+                                        <td>Retired</td>
+                                        <td>25</td>
+                                        <td>39.0</td>
+                                        <td>1.56</td>
+                                        <td>3.75</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Roger Clemens</th>
+                                        <td>Retired</td>
+                                        <td>24</td>
+                                        <td>138.7</td>
+                                        <td>5.78</td>
+                                        <td>3.13</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jesse Orosco</th>
+                                        <td>Retired</td>
+                                        <td>24</td>
+                                        <td>22.9</td>
+                                        <td>0.95</td>
+                                        <td>3.16</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead>
+                                  <tr>
+                                      <th colspan="6">Retired: Career WAR</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Roger Clemens</th>
+                                        <td>Retired</td>
+                                        <td>24</td>
+                                        <td>138.7</td>
+                                        <td>5.78</td>
+                                        <td>3.13</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Curt Schilling</th>
+                                        <td>Retired</td>
+                                        <td>20</td>
+                                        <td>80.5</td>
+                                        <td>4.03</td>
+                                        <td>3.46</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jim McCormick</th>
+                                        <td>Retired</td>
+                                        <td>10</td>
+                                        <td>76.0</td>
+                                        <td>7.6</td>
+                                        <td>2.43</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kevin Brown</th>
+                                        <td>Retired</td>
+                                        <td>19</td>
+                                        <td>68.2</td>
+                                        <td>3.59</td>
+                                        <td>3.28</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Rick Reuschel</th>
+                                        <td>Retired</td>
+                                        <td>19</td>
+                                        <td>68.1</td>
+                                        <td>3.58</td>
+                                        <td>3.37</td>
+                                    </tr>
+                                </tbody>
+                            </table>               
+                        </div>
+                    </div>
+                    <!--Active Players-->
+                    <div id="activePlayers" class="row status-chg">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <img src="./Resources/assets/images/war-years-active.jpg">
+                            <p class="graph-cap">Axes represent all-time MLB averages. It's clear there's a strong relationship between longevity and Career WAR, but it's interesting to see which players put up strong WAR numbers during shorter careers.</p>
+                        </div>    
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead class="thead-dark">
+                                  <tr>
+                                      <th colspan="6">Active: Longest Career</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Bartolo Colon</th>
+                                        <td>Active</td>
+                                        <td>21</td>
+                                        <td>47.8</td>
+                                        <td>2.28</td>
+                                        <td>4.12</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Zack Greinke</th>
+                                        <td>Active</td>
+                                        <td>17</td>
+                                        <td>67.3</td>
+                                        <td>3.96</td>
+                                        <td>3.34</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Justin Verlander</th>
+                                        <td>Active</td>
+                                        <td>16</td>
+                                        <td>72.3</td>
+                                        <td>4.52</td>
+                                        <td>3.33</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Anibal Sanchez</th>
+                                        <td>Active</td>
+                                        <td>15</td>
+                                        <td>29.3</td>
+                                        <td>1.95</td>
+                                        <td>4.01</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jon Lester</th>
+                                        <td>Active</td>
+                                        <td>15</td>
+                                        <td>45.3</td>
+                                        <td>3.02</td>
+                                        <td>3.58</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <table class="table desc-tbl table-striped table-bordered" style="width:100%">
+                                <thead>
+                                  <tr>
+                                      <th colspan="6">Active: Career WAR</th>
+                                  </tr>  
+                                  <tr style="text-align: left">
+                                    <th>Player</th>
+                                    <th>Status</th>
+                                    <th>Seasons</th>
+                                    <th>WAR</th>
+                                    <th>Avg WAR</th>
+                                    <th>ERA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Justin Verlander</th>
+                                        <td>Active</td>
+                                        <td>16</td>
+                                        <td>72.3</td>
+                                        <td>4.52</td>
+                                        <td>3.33</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Zack Greinke</th>
+                                        <td>Active</td>
+                                        <td>17</td>
+                                        <td>67.3</td>
+                                        <td>3.96</td>
+                                        <td>3.34</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Clayton Kershaw</th>
+                                        <td>Active</td>
+                                        <td>13</td>
+                                        <td>65.9</td>
+                                        <td>5.07</td>
+                                        <td>2.44</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Max Scherzer</th>
+                                        <td>Active</td>
+                                        <td>13</td>
+                                        <td>59.3</td>
+                                        <td>4.56</td>
+                                        <td>3.21</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Cole Hamels</th>
+                                        <td>Active</td>
+                                        <td>14</td>
+                                        <td>58.5</td>
+                                        <td>4.18</td>
+                                        <td>3.42</td>
+                                    </tr>
+                                </tbody>
+                            </table>               
+                        </div>
+                    </div>
+                </div>
+            
+        <!--Visualizations Sidebar-->
+                <div class="col-sm-12 col-md-4">
+                 <h1>Visualizations</h1>
+                    <div class="row">
+                        <div class="col-sm-3 col-lg-12 col-xl-6">
+                            <a href="war-years.html">
+                             <img class="float-left select-comparison" src="./Resources/assets/images/war-years-all.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-lg-12 col-xl-6">
+                            <a href="avg-war-war.html">
+                                <img class="float-right" src="./Resources/assets/images/all-avg_war-war.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-lg-12 col-xl-6">
+                            <a href="war-era.html">
+                                <img class="float-left" src="./Resources/assets/images/all-war-era.jpg">
+                            </a>
+                        </div>   
+                        <div class="col-sm-3 col-lg-12 col-xl-6">
+                            <a href="avg-war-era.html">
+                                <img class="float-right" src="./Resources/assets/images/all-avg_war-era.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+             </div>   
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

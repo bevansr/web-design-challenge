@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Web Design Homework - MLB Pitcher Data </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+         <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">MLB HoF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto smOnly">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        </a>
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="war-years.html">Career WAR vs Seasons Played</a>
+                        <a class="dropdown-item" href="avg-war-war.html">Avg WAR vs Total WAR</a>
+                        <a class="dropdown-item" href="war-era.html">WAR vs ERA</a>
+                        <a class="dropdown-item" href="avg-war-era.html">Avg WAR vs ERA</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav justify-content-end lgOnly">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="war-years.html">Career WAR vs Seasons Played</a>
+                    <a class="dropdown-item" href="avg-war-war.html">Avg WAR vs Total WAR</a>
+                    <a class="dropdown-item" href="war-era.html">WAR vs ERA</a>
+                    <a class="dropdown-item" href="avg-war-era.html">Avg WAR vs ERA</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </nav>   
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Comparison</h1>
+                </div>
+            </div>
+            <div class="row">
+                <p class="compare-statement">Click any plot to get an in-depth analysis.</p>
+            </div>
+            <!--All Players-->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav justify-content-center lgOnly">
+                        <li class="nav-item">
+                          <a class="nav-link jumpToLink disabled" href="#">Jump to:</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hofLink" href="#hofPlayers">HoF</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link retiredLink" href="#retiredPlayers">Retired</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link activeLink" href="#activePlayers">Active</a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Career WAR vs Seasons Played</h3>
+                    <a href="war-years.html">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/war-years-all.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career WAR</h3>
+                    <a href="avg-war-war.html">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/all-avg_war-war.jpg">
+                    </a> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg Career WAR vs Career ERA</h3>
+                    <a href="war-era.html">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/all-war-era.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career ERA</h3>
+                    <a href="avg-war-era.html">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/all-avg_war-era.jpg">
+                    </a> 
+                </div>
+            </div>
+            <!--HoF Players-->
+            <div id="hofPlayers" class="row status-chg">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Career WAR vs Seasons Played</h3>
+                    <a href="war-years.html#hofPlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/war-years-hof.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career WAR</h3>
+                    <a href="avg-war-war.html#hofPlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/hof-avg_war-war.jpg">
+                    </a> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg Career WAR vs Career ERA</h3>
+                    <a href="war-era.html#hofPlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/hof-war-era.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career ERA</h3>
+                    <a href="avg-war-era.html#hofPlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/hof-avg_war-era.jpg">
+                    </a> 
+                </div>
+            </div>
+            <!--Retired Players-->
+            <div id="retiredPlayers" class="row status-chg">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Career WAR vs Seasons Played</h3>
+                    <a href="war-years.html#retiredPlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/war-years-retired.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career WAR</h3>
+                    <a href="avg-war-war.html#retiredPlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/retired-avg_war-war.jpg">
+                    </a> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg Career WAR vs Career ERA</h3>
+                    <a href="war-era.html#retiredPlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/retired-war-era.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career ERA</h3>
+                    <a href="avg-war-era.html#retiredPlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/retired-avg_war-era.jpg">
+                    </a> 
+                </div>
+            </div>
+            <!--Active Players-->
+            <div id="activePlayers" class="row status-chg">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Career WAR vs Seasons Played</h3>
+                    <a href="war-years.html#activePlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/war-years-active.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career WAR</h3>
+                    <a href="avg-war-war.html#activePlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/active-avg_war-war.jpg">
+                    </a> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg Career WAR vs Career ERA</h3>
+                    <a href="war-era.html#activePlayers">
+                        <img class="float-left comparison-img-left" src="./Resources/assets/images/active-war-era.jpg">
+                    </a> 
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>Avg WAR/Season vs Career ERA</h3>
+                    <a href="avg-war-era.html#activePlayers">
+                        <img class="float-right comparison-img-right" src="./Resources/assets/images/active-avg_war-era.jpg">
+                    </a> 
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
